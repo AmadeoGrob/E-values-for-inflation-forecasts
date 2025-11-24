@@ -1,0 +1,61 @@
+[flake8]
+# Base flake8 configuration for MSc thesis project
+
+# Maximum line length
+max-line-length = 120
+
+# Directories to exclude from linting
+exclude = 
+    .git,
+    _pycache_,
+    .pytest_cache,
+    .venv,
+    venv,
+    env,
+    build,
+    dist,
+    *.egg-info,
+    .tox,
+    .coverage,
+    htmlcov,
+    experiments/*/,
+    data/*/,
+    notebooks/.ipynb_checkpoints
+
+# Error codes to ignore
+ignore = 
+    # E203: whitespace before ':' (conflicts with black)
+    E203,
+    # E501: line too long (handled by black)
+    E501,
+    # W503: line break before binary operator (conflicts with black)
+    W503,
+
+# Error codes to select (empty means all)
+select = E,W,F
+
+# Maximum complexity for McCabe complexity checker
+max-complexity = 12
+
+# Files to include
+filename = *.py
+
+# Show source code for each error
+show-source = True
+
+# Show pep8 statistics
+statistics = True
+
+# Count errors and warnings
+count = True
+
+# Per-file ignores (if needed)
+per-file-ignores =
+    # _init_.py files often have unused imports
+    _init_.py:F401,F403
+    # Test files may have long lines and unused imports
+    tests/*.py:F401,F811
+    # Configuration files may have long lines
+    configs/*.py:E501
+    # Scripts may have long lines
+    scripts/*.py:E501

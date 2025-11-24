@@ -1,0 +1,136 @@
+model,boundary_count,total_observations,boundary_share,region,horizon
+"ARIMA(1,1,0)",0,305,0,ch,1
+BVAR (Minnesota),0,305,0,ch,1
+BVAR (NW),0,305,0,ch,1
+BVAR (diffuse),0,305,0,ch,1
+DFM,0,305,0,ch,1
+DRF,7,304,0.023026315789473683,ch,1
+Naive last,0,305,0,ch,1
+PNC,104,305,0.34098360655737703,ch,1
+Rolling mean,0,305,0,ch,1
+"ARIMA(1,1,0)",0,305,0,ch,2
+BVAR (Minnesota),0,304,0,ch,2
+BVAR (NW),0,304,0,ch,2
+BVAR (diffuse),0,304,0,ch,2
+DFM,0,304,0,ch,2
+DRF,7,303,0.0231023102310231,ch,2
+Naive last,0,305,0,ch,2
+PNC,113,305,0.3704918032786885,ch,2
+Rolling mean,0,305,0,ch,2
+"ARIMA(1,1,0)",0,305,0,ch,3
+BVAR (Minnesota),0,303,0,ch,3
+BVAR (NW),0,303,0,ch,3
+BVAR (diffuse),0,303,0,ch,3
+DFM,0,303,0,ch,3
+DRF,7,302,0.023178807947019868,ch,3
+Naive last,0,305,0,ch,3
+PNC,120,305,0.39344262295081966,ch,3
+Rolling mean,0,305,0,ch,3
+"ARIMA(1,1,0)",0,305,0,ch,6
+BVAR (Minnesota),0,300,0,ch,6
+BVAR (NW),0,300,0,ch,6
+BVAR (diffuse),0,300,0,ch,6
+DFM,0,300,0,ch,6
+DRF,7,299,0.023411371237458192,ch,6
+Naive last,0,305,0,ch,6
+PNC,142,305,0.46557377049180326,ch,6
+Rolling mean,0,305,0,ch,6
+"ARIMA(1,1,0)",0,305,0,ch,12
+BVAR (Minnesota),0,294,0,ch,12
+BVAR (NW),0,294,0,ch,12
+BVAR (diffuse),0,294,0,ch,12
+DFM,0,294,0,ch,12
+DRF,7,293,0.023890784982935155,ch,12
+Naive last,0,305,0,ch,12
+PNC,155,305,0.5081967213114754,ch,12
+Rolling mean,0,305,0,ch,12
+"ARIMA(1,1,0)",0,176,0,eu,1
+BVAR (Minnesota),0,176,0,eu,1
+BVAR (NW),0,176,0,eu,1
+BVAR (diffuse),0,176,0,eu,1
+DFM,0,176,0,eu,1
+DRF,11,174,0.06321839080459771,eu,1
+Naive last,0,176,0,eu,1
+PNC,81,176,0.4602272727272727,eu,1
+Rolling mean,0,176,0,eu,1
+"ARIMA(1,1,0)",0,176,0,eu,2
+BVAR (Minnesota),0,175,0,eu,2
+BVAR (NW),0,175,0,eu,2
+BVAR (diffuse),0,175,0,eu,2
+DFM,0,175,0,eu,2
+DRF,11,173,0.06358381502890173,eu,2
+Naive last,0,176,0,eu,2
+PNC,91,176,0.5170454545454546,eu,2
+Rolling mean,0,176,0,eu,2
+"ARIMA(1,1,0)",0,176,0,eu,3
+BVAR (Minnesota),0,174,0,eu,3
+BVAR (NW),0,174,0,eu,3
+BVAR (diffuse),0,174,0,eu,3
+DFM,0,174,0,eu,3
+DRF,11,172,0.06395348837209303,eu,3
+Naive last,0,176,0,eu,3
+PNC,98,176,0.5568181818181818,eu,3
+Rolling mean,0,176,0,eu,3
+"ARIMA(1,1,0)",0,176,0,eu,6
+BVAR (Minnesota),1,171,0.005847953216374269,eu,6
+BVAR (NW),3,171,0.017543859649122806,eu,6
+BVAR (diffuse),3,171,0.017543859649122806,eu,6
+DFM,0,171,0,eu,6
+DRF,12,169,0.07100591715976332,eu,6
+Naive last,0,176,0,eu,6
+PNC,105,176,0.5965909090909091,eu,6
+Rolling mean,0,176,0,eu,6
+"ARIMA(1,1,0)",0,176,0,eu,12
+BVAR (Minnesota),15,165,0.09090909090909091,eu,12
+BVAR (NW),16,165,0.09696969696969697,eu,12
+BVAR (diffuse),15,165,0.09090909090909091,eu,12
+DFM,0,165,0,eu,12
+DRF,11,163,0.06748466257668712,eu,12
+Naive last,0,176,0,eu,12
+PNC,108,176,0.6136363636363636,eu,12
+Rolling mean,0,176,0,eu,12
+"ARIMA(1,1,0)",0,471,0,us,1
+BVAR (Minnesota),0,471,0,us,1
+BVAR (NW),0,471,0,us,1
+BVAR (diffuse),0,471,0,us,1
+DFM,0,471,0,us,1
+DRF,8,469,0.017057569296375266,us,1
+Naive last,0,471,0,us,1
+PNC,134,471,0.28450106157112526,us,1
+Rolling mean,0,471,0,us,1
+"ARIMA(1,1,0)",0,471,0,us,2
+BVAR (Minnesota),0,470,0,us,2
+BVAR (NW),0,470,0,us,2
+BVAR (diffuse),0,470,0,us,2
+DFM,0,470,0,us,2
+DRF,8,468,0.017094017094017096,us,2
+Naive last,0,471,0,us,2
+PNC,154,471,0.32696390658174096,us,2
+Rolling mean,0,471,0,us,2
+"ARIMA(1,1,0)",0,471,0,us,3
+BVAR (Minnesota),0,469,0,us,3
+BVAR (NW),0,469,0,us,3
+BVAR (diffuse),0,469,0,us,3
+DFM,0,469,0,us,3
+DRF,8,467,0.017130620985010708,us,3
+Naive last,0,471,0,us,3
+PNC,161,471,0.34182590233545646,us,3
+Rolling mean,0,471,0,us,3
+"ARIMA(1,1,0)",0,471,0,us,6
+BVAR (Minnesota),0,466,0,us,6
+BVAR (NW),0,466,0,us,6
+BVAR (diffuse),0,466,0,us,6
+DFM,0,466,0,us,6
+DRF,7,464,0.015086206896551725,us,6
+Naive last,0,471,0,us,6
+PNC,197,471,0.4182590233545648,us,6
+Rolling mean,0,471,0,us,6
+"ARIMA(1,1,0)",0,471,0,us,12
+BVAR (Minnesota),1,460,0.002173913043478261,us,12
+BVAR (NW),2,460,0.004347826086956522,us,12
+BVAR (diffuse),1,460,0.002173913043478261,us,12
+DFM,0,460,0,us,12
+DRF,8,458,0.017467248908296942,us,12
+Naive last,0,471,0,us,12
+PNC,240,471,0.5095541401273885,us,12
+Rolling mean,0,471,0,us,12

@@ -1,0 +1,76 @@
+\begin{table}[htbp]
+  \centering
+  
+  % --- Stacked Tables ---
+  \begin{tabular}{l cccccc}
+\toprule
+ & \multicolumn{3}{c}{\textbf{h=1}} & \multicolumn{3}{c}{\textbf{h=2}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+\textbf{Model} & \textbf{RMSE} & \textbf{MAE} & \textbf{CRPS} & \textbf{RMSE} & \textbf{MAE} & \textbf{CRPS} \\
+\midrule
+\multicolumn{7}{l}{\textit{Baseline Models}} \\
+Naive last & 0.360 & 0.241 & 0.182 & 0.602 & 0.416 & 0.315 \\
+Rolling mean & 2.026 & 1.376 & 1.038 & 2.154 & 1.471 & 1.106 \\
+PNC & 2.026 & 1.369 & 0.980 & 2.154 & 1.463 & 1.075 \\
+ARIMA(1,1,0) & \textbf{0.334} & \textbf{0.222} & \textbf{0.170} & \textbf{0.562} & \textbf{0.388} & \textbf{0.292} \\
+\midrule
+\multicolumn{7}{l}{\textit{BVAR Models}} \\
+BVAR (diffuse) & 0.431 & 0.289 & 0.224 & 0.784 & 0.523 & 0.413 \\
+BVAR (Minnesota) & 0.426 & 0.285 & 0.219 & 0.765 & 0.511 & 0.399 \\
+BVAR (NW) & 0.430 & 0.288 & 0.223 & 0.780 & 0.521 & 0.413 \\
+\midrule
+\multicolumn{7}{l}{\textit{Multivariate \& ML Models}} \\
+DFM & 0.342 & 0.225 & 0.170 & 0.584 & 0.402 & 0.302 \\
+DRF & 1.295 & 0.712 & 0.508 & 1.397 & 0.825 & 0.581 \\
+\bottomrule
+\end{tabular}
+  \vspace{1em}
+  \begin{tabular}{l cccccc}
+\toprule
+ & \multicolumn{3}{c}{\textbf{h=3}} & \multicolumn{3}{c}{\textbf{h=6}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+\textbf{Model} & \textbf{RMSE} & \textbf{MAE} & \textbf{CRPS} & \textbf{RMSE} & \textbf{MAE} & \textbf{CRPS} \\
+\midrule
+\multicolumn{7}{l}{\textit{Baseline Models}} \\
+Naive last & 0.813 & 0.572 & 0.432 & 1.403 & 0.934 & 0.728 \\
+Rolling mean & 2.275 & 1.560 & 1.169 & 2.586 & 1.794 & 1.335 \\
+PNC & 2.275 & 1.556 & 1.163 & 2.586 & 1.794 & 1.400 \\
+ARIMA(1,1,0) & \textbf{0.760} & 0.543 & \textbf{0.405} & \textbf{1.335} & \textbf{0.894} & \textbf{0.699} \\
+\midrule
+\multicolumn{7}{l}{\textit{BVAR Models}} \\
+BVAR (diffuse) & 1.065 & 0.714 & 0.568 & 1.853 & 1.174 & 1.001 \\
+BVAR (Minnesota) & 1.039 & 0.693 & 0.550 & 1.814 & 1.142 & 0.971 \\
+BVAR (NW) & 1.059 & 0.710 & 0.568 & 1.841 & 1.168 & 1.001 \\
+\midrule
+\multicolumn{7}{l}{\textit{Multivariate \& ML Models}} \\
+DFM & 0.791 & \textbf{0.543} & 0.417 & 1.433 & 0.943 & 0.751 \\
+DRF & 1.492 & 0.910 & 0.639 & 1.669 & 1.059 & 0.736 \\
+\bottomrule
+\end{tabular}
+  \vspace{1em}
+  \begin{tabular}{l ccc}
+\toprule
+ & \multicolumn{3}{c}{\textbf{h=12}} \\
+\cmidrule(lr){2-4}
+\textbf{Model} & \textbf{RMSE} & \textbf{MAE} & \textbf{CRPS} \\
+\midrule
+\multicolumn{4}{l}{\textit{Baseline Models}} \\
+Naive last & 2.430 & 1.610 & 1.240 \\
+Rolling mean & 2.955 & 2.082 & 1.537 \\
+PNC & 2.955 & 2.112 & 1.716 \\
+ARIMA(1,1,0) & 2.385 & 1.583 & 1.253 \\
+\midrule
+\multicolumn{4}{l}{\textit{BVAR Models}} \\
+BVAR (diffuse) & 3.132 & 2.024 & 1.798 \\
+BVAR (Minnesota) & 3.077 & 1.963 & 1.738 \\
+BVAR (NW) & 3.118 & 2.018 & 1.800 \\
+\midrule
+\multicolumn{4}{l}{\textit{Multivariate \& ML Models}} \\
+DFM & 2.711 & 1.758 & 1.453 \\
+DRF & \textbf{1.832} & \textbf{1.114} & \textbf{0.804} \\
+\bottomrule
+\end{tabular}
+  
+  \caption{Forecasting performance for Euro Area (EU) across various horizons. Lower values are better for all metrics (RMSE, MAE, and CRPS).}
+  \label{tab:eu_performance_summary}
+\end{table}

@@ -1,0 +1,78 @@
+\begin{table}[h]
+  \centering
+    {\setlength{\tabcolsep}{3pt} \renewcommand{\arraystretch}{0.85}
+\begin{tabular}{l c c c c c c}
+\toprule
+ & \multicolumn{3}{c}{\textbf{h=1}} & \multicolumn{3}{c}{\textbf{h=2}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+\textbf{Model} & \makecell{\textbf{KS Test} \\ \textbf{($\mathbf{p}$)} } & \makecell{\textbf{Edge} \\ \textbf{freq. (\%)} } & \textbf{max $\mathbf{e}$} & \makecell{\textbf{KS Test} \\ \textbf{($\mathbf{p}$)} } & \makecell{\textbf{Edge} \\ \textbf{freq. (\%)} } & \textbf{max $\mathbf{e}$} \\
+\midrule
+\multicolumn{7}{l}{\textit{Baseline Models}} \\
+ARIMA(1,1,0) & 0.109 & 0.0 & $1.42\times 10^{0}$ & 0.166 & 0.0 & $1.09\times 10^{0}$ \\
+Naive last & 0.198 & 0.0 & $2.13\times 10^{0}$ & 0.135 & 0.0 & $1.26\times 10^{0}$ \\
+PNC & -- & 34.1 & $2.44\times 10^{7}$ & -- & 37.0 & $2.29\times 10^{6}$ \\
+Rolling mean & 0.021 & 0.0 & $3.32\times 10^{9}$ & 0.025 & 0.0 & $3.96\times 10^{5}$ \\
+\midrule
+\multicolumn{7}{l}{\textit{BVAR Models}} \\
+BVAR (Minnesota) & 0.871 & 0.0 & $2.03\times 10^{2}$ & 0.976 & 0.0 & $4.54\times 10^{0}$ \\
+BVAR (NW) & 0.966 & 0.0 & $2.00\times 10^{4}$ & 0.843 & 0.0 & $6.33\times 10^{1}$ \\
+BVAR (diffuse) & 0.864 & 0.0 & $2.00\times 10^{2}$ & 0.899 & 0.0 & $4.18\times 10^{0}$ \\
+\midrule
+\multicolumn{7}{l}{\textit{Multivariate \& ML Models}} \\
+DFM & 0.055 & 0.0 & $1.44\times 10^{0}$ & 0.081 & 0.0 & $1.10\times 10^{0}$ \\
+DRF & 0.000 & 2.3 & $1.21\times 10^{7}$ & 0.034 & 2.3 & $1.72\times 10^{0}$ \\
+\bottomrule
+\end{tabular}
+  \vspace{0.6em}
+  \begin{tabular}{l c c c c c c}
+\toprule
+ & \multicolumn{3}{c}{\textbf{h=3}} & \multicolumn{3}{c}{\textbf{h=6}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+\textbf{Model} & \makecell{\textbf{KS Test} \\ \textbf{($\mathbf{p}$)} } & \makecell{\textbf{Edge} \\ \textbf{freq. (\%)} } & \textbf{max $\mathbf{e}$} & \makecell{\textbf{KS Test} \\ \textbf{($\mathbf{p}$)} } & \makecell{\textbf{Edge} \\ \textbf{freq. (\%)} } & \textbf{max $\mathbf{e}$} \\
+\midrule
+\multicolumn{7}{l}{\textit{Baseline Models}} \\
+ARIMA(1,1,0) & 0.068 & 0.0 & $1.15\times 10^{0}$ & 0.186 & 0.0 & $4.50\times 10^{0}$ \\
+Naive last & 0.093 & 0.0 & $1.40\times 10^{0}$ & 0.098 & 0.0 & $5.09\times 10^{0}$ \\
+PNC & -- & 39.3 & $1.59\times 10^{5}$ & -- & 46.6 & $8.79\times 10^{3}$ \\
+Rolling mean & 0.042 & 0.0 & $9.77\times 10^{3}$ & 0.035 & 0.0 & $9.28\times 10^{0}$ \\
+\midrule
+\multicolumn{7}{l}{\textit{BVAR Models}} \\
+BVAR (Minnesota) & 0.633 & 0.0 & $1.00\times 10^{0}$ & 0.220 & 0.0 & $2.40\times 10^{1}$ \\
+BVAR (NW) & 0.580 & 0.0 & $2.74\times 10^{0}$ & 0.017 & 0.0 & $2.09\times 10^{2}$ \\
+BVAR (diffuse) & 0.369 & 0.0 & $1.00\times 10^{0}$ & 0.085 & 0.0 & $1.85\times 10^{1}$ \\
+\midrule
+\multicolumn{7}{l}{\textit{Multivariate \& ML Models}} \\
+DFM & 0.035 & 0.0 & $1.00\times 10^{0}$ & 0.058 & 0.0 & $2.13\times 10^{0}$ \\
+DRF & 0.164 & 2.3 & $2.33\times 10^{0}$ & 0.549 & 2.3 & $1.48\times 10^{0}$ \\
+\bottomrule
+\end{tabular}
+  \vspace{0.6em}
+  \begin{tabular}{l c c c}
+\toprule
+ & \multicolumn{3}{c}{\textbf{h=12}} \\
+\cmidrule(lr){2-4}
+\textbf{Model} & \makecell{\textbf{KS Test} \\ \textbf{($\mathbf{p}$)} } & \makecell{\textbf{Edge} \\ \textbf{freq. (\%)} } & \textbf{max $\mathbf{e}$} \\
+\midrule
+\multicolumn{4}{l}{\textit{Baseline Models}} \\
+ARIMA(1,1,0) & 0.536 & 0.0 & $1.55\times 10^{0}$ \\
+Naive last & 0.158 & 0.0 & $2.26\times 10^{0}$ \\
+PNC & -- & 50.8 & $3.45\times 10^{1}$ \\
+Rolling mean & 0.004 & 0.0 & $9.01\times 10^{0}$ \\
+\midrule
+\multicolumn{4}{l}{\textit{BVAR Models}} \\
+BVAR (Minnesota) & 0.000 & 0.0 & $3.60\times 10^{3}$ \\
+BVAR (NW) & 0.000 & 0.0 & $3.89\times 10^{4}$ \\
+BVAR (diffuse) & 0.000 & 0.0 & $9.52\times 10^{3}$ \\
+\midrule
+\multicolumn{4}{l}{\textit{Multivariate \& ML Models}} \\
+DFM & 0.158 & 0.0 & $1.05\times 10^{0}$ \\
+DRF & 0.319 & 2.4 & $1.21\times 10^{0}$ \\
+\bottomrule
+\end{tabular}
+  \caption{Calibration diagnostics for Switzerland across horizons. 
+  The p-values are from a two-sided one sample KS test for uniformity of the PITs. 
+  Edge frequency denotes the share of PIT values at the boundaries (0 or 1) during the whole 
+  evaluation period. Max e is the maximally attained e-value during the evaluation period.}
+  \label{tab:ch_calibration_summary}
+\end{table}
+

@@ -1,0 +1,2 @@
+region,target_variable,n_observations,n_features,init_train_size,date_start,date_end,lag_max,horizons,include_current
+us,cpi_all_yoy,772,80,303,1960-12-31,2025-03-31,1,"1, 2, 3, 6, 12",TRUE

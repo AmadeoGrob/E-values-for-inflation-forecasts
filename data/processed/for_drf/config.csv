@@ -1,0 +1,11 @@
+parameter,value
+root_dir,C:/Users/amade/OneDrive/Dokumente/ETH_MSc/FS_25/01_MSc_Thesis/Application/MSc-thesis/src/03_models_r_drf/../..
+data_dir,C:/Users/amade/OneDrive/Dokumente/ETH_MSc/FS_25/01_MSc_Thesis/Application/MSc-thesis/src/03_models_r_drf/../../data/processed
+prepared_data_dir,C:/Users/amade/OneDrive/Dokumente/ETH_MSc/FS_25/01_MSc_Thesis/Application/MSc-thesis/src/03_models_r_drf/../../data/processed/for_drf
+lag_max,1
+target_lag_max,11
+horizons,1
+include_current,TRUE
+init_train_pct,0.4
+min_train_obs,100
+seed,42

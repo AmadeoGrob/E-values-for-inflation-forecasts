@@ -1,0 +1,38 @@
+# Python Requirements for MSc Thesis: Anytime Valid Inference for Probabilistic Forecasts
+# Package versions based on tested environment (uv pip list output)
+
+# Core data manipulation and analysis
+pandas==2.3.1
+numpy==1.26.4
+openpyxl==3.1.5
+
+# Statistical modeling and time series analysis
+statsmodels==0.14.5
+scipy==1.16.1
+pmdarima==2.0.4
+
+# Machine learning utilities
+scikit-learn==1.7.1
+
+# Forecast evaluation
+properscoring==0.1
+
+# Progress bars and utilities
+tqdm==4.67.1
+
+# Plotting and visualization
+matplotlib==3.10.3
+seaborn==0.13.2
+
+# Jupyter notebook support (for development and analysis notebooks)
+ipykernel==6.29.5
+jupyter-client==8.6.3
+jupyter-core==5.8.1
+
+# Additional dependencies (automatically installed with above packages)
+# Listed here for completeness and reproducibility
+joblib==1.5.1
+patsy==1.0.1
+python-dateutil==2.9.0.post0
+pytz==2025.2
+packaging==25.0
